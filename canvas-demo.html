@@ -1,0 +1,19 @@
+    <!DOCTYPE HTML>  
+    <html>  
+        <head>
+            <meta name="viewport" content="width=device-width,initial-scale=1">  
+            <title>html5 canvas drawing board</title>     
+        </head>  
+        <canvas id="mycanvas" style="border:1px solid red;"></canvas>  
+      
+    </html>  
+    <script type="text/javascript" src="http://cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
+    <script src="http://cdn.bootcss.com/hammer.js/2.0.8/hammer.min.js"></script>
+    <script src="Scrawl.js"></script>
+    <script>   
+        var a = new Scrawl({
+            el: document.querySelector('#mycanvas'),
+            lineColor: 'green',
+            lineWidth: 10
+        });
+    </script>  
